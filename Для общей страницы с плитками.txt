@@ -1,0 +1,14 @@
+﻿=== ДЛЯ БЛОКА "SHOWCASING MEDICAL INNOVATION" ===
+- Заголовок: Showcasing Medical Innovation
+- Текст: Bring your medical breakthroughs to life with scientifically accurate, compelling videos.
+- Ссылка на видео: https://drive.google.com/file/d/1Ld2Wfk5u_z-...
+
+=== ДЛЯ БЛОКА "TRAINING & EDUCATING PROFESSIONALS" ===
+- Заголовок: Training & Educating Professionals
+- Текст: Enhance your medical education programs with visually rich, accurate content that simplifies complex information for your staff.
+- Ссылка на видео: https://drive.google.com/file/d/1LNizjKhKiOja...
+
+=== ДЛЯ БЛОКА "BUILDING YOUR HEALTHCARE BRAND" ===
+- Заголовок: Building Your Healthcare Brand
+- Текст: Strengthen your healthcare brand with professional corporate videos that showcase your expertise, values, and mission.
+- Ссылка на видео: https://drive.google.com/file/d/1OQ3o2qWdZ4T...

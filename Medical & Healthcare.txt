@@ -1,0 +1,18 @@
+﻿=== ДЛЯ БЛОКА "ГЛАВНЫЙ ЗАГОЛОВОК И ВИДЕО НА ФОНЕ" ===
+- Заголовок: Video Production & 3D Animation for the Healthcare industry
+- Текст: We translate complex medical innovations into compelling videos that educate patients, train professionals, and accelerate growth.
+- Ссылка на видео на фоне: https://drive.google.com/file/d/1pbBXOCKFCJg34p0sBb1-bw-TbU4Iya7/view?usp=share_link
+- Ссылка на контент (плитка справа): https://www.lavamedia.us/video-marketing-f-or-small-business
+- Логотипы (для подбора иконок): Fresenius Kabi, 3M, accuchek
+
+=== ДЛЯ БЛОКА "ЦИТАТА И СПИСОК" ===
+- Заголовок: Video Solutions for Every Healthcare Challenge
+- Текст: Marketing to Patients & Consumers
+- Текст в основном поле: Transform complex medical procedures and treatments into clear, trustworthy content that patients can understand and act upon.
+- Текст в плитке (справа): Perfect these video formats - see them in action on our real projects below.
+- Ссылка на видео в блоке: https://www.youtube.com/watch?v=yYg... (нужно вставить сюда)
+- Пункты списка:
+  - Treatment explanation videos
+  - Procedure overview content
+  - Patient testimonial videos
+  - Healthcare service marketing
