@@ -1,58 +1,269 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Профессиональный Сайт</title>
-    <style>
-        body {
-            background-color: #0a0a23; /* Темно-синий фон */
-            color: #ffffff; /* Белый цвет текста */
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .block {
-            background-color: #1b1b32; /* Цвет фона для блоков */
-            padding: 40px;
-            margin-bottom: 30px;
-            border-radius: 8px;
-        }
-        h1 {
-            font-size: 2.5em; /* Крупный заголовок */
-            border-bottom: 2px solid #5a5a8a;
-            padding-bottom: 10px;
-        }
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accu-Chek: Healthcare Brand</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- CSS -->
+<style>
+/* --- Общие стили --- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f0f4f8;
+    color: #1a1a1a;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(135deg,#2b6cb0,#5b8bff);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    animation: fadeInDown 1s ease forwards;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffe100;
+}
+
+/* --- Анимации --- */
+@keyframes fadeInUp {
+    from {opacity:0; transform: translateY(30px);}
+    to {opacity:1; transform: translateY(0);}
+}
+@keyframes fadeInDown {
+    from {opacity:0; transform: translateY(-30px);}
+    to {opacity:1; transform: translateY(0);}
+}
+@keyframes scaleUp {
+    from {opacity:0; transform: scale(0.8);}
+    to {opacity:1; transform: scale(1);}
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* --- Секции --- */
+section {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2b6cb0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    animation: fadeInUp 1.2s ease forwards;
+}
+
+/* --- Карточки продуктов --- */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(17,24,39,0.08);
+    transition: transform 0.4s, box-shadow 0.4s;
+    opacity:0;
+    animation: scaleUp 0.8s forwards;
+}
+
+.card:nth-child(1) {animation-delay: 0.2s;}
+.card:nth-child(2) {animation-delay: 0.4s;}
+.card:nth-child(3) {animation-delay: 0.6s;}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(17,24,39,0.15);
+}
+
+.card i {
+    font-size: 50px;
+    color: #2b6cb0;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* --- Кнопка Download --- */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg,#2b6cb0,#5b8bff);
+    color: white;
+    padding: 18px 40px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s;
+    box-shadow: 0 6px 20px rgba(43,108,176,0.3);
+}
+
+.download-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(43,108,176,0.5);
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #2b6cb0;
+    color: white;
+    font-size: 1rem;
+}
+
+/* --- Адаптив --- */
+@media(max-width:768px){
+    nav ul {flex-direction: column; gap:15px;}
+    section h2 {font-size:1.6rem;}
+    .card {padding:20px;}
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Добро пожаловать на LavaMedia!</h1>
-        <p>Мы создаём видео, которые помогают бизнесу расти.</p>
 
-        <div class="block">
-            <h2>Video Production & 3D Animation for the Healthcare industry</h2>
-            <p>We translate complex medical innovations into compelling videos that educate patients, train professionals, and accelerate growth.</p>
+<header>
+    <h1><i class="fa-solid fa-heart-pulse"></i> Accu-Chek</h1>
+    <nav>
+        <ul>
+            <li><a href="#about"><i class="fa-solid fa-info-circle"></i> О компании</a></li>
+            <li><a href="#products"><i class="fa-solid fa-capsules"></i> Продукты</a></li>
+            <li><a href="#download"><i class="fa-solid fa-download"></i> Скачать</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+
+<!-- About Section -->
+<section id="about">
+    <h2><i class="fa-solid fa-user-md"></i> Почему Accu-Chek?</h2>
+    <p>Accu-Chek предлагает инновационный подход к контролю уровня сахара: глюкометры, тест-полоски и мобильное приложение. Мы заботимся о здоровье пациентов, обеспечивая точность, удобство и надежность.</p>
+</section>
+
+<!-- Products Section -->
+<section id="products">
+    <h2><i class="fa-solid fa-capsules"></i> Наши продукты</h2>
+    <div class="features">
+        <div class="card">
+            <i class="fa-solid fa-heartbeat"></i>
+            <h3>Глюкометры</h3>
+            <p>Высокая точность измерений, удобный интерфейс и мгновенные результаты.</p>
         </div>
-
-        <div class="block">
-            <h2>Accu-Chek: A Patient-Centric Instructional Video Series</h2>
-            <p>Lava Media partnered with Accu-Chek to create a comprehensive series...</p>
+        <div class="card">
+            <i class="fa-solid fa-vial"></i>
+            <h3>Тест-полоски</h3>
+            <p>Надёжные и удобные для ежедневного контроля, совместимы с любыми устройствами.</p>
         </div>
-
-        <div class="block">
-            <h2>Phytolax: Crafting a Relatable TV Commercial</h2>
-            <p>For the laxative brand Phytolax, we produced a TV commercial...</p>
+        <div class="card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Мобильное приложение</h3>
+            <p>Синхронизация данных, графики, отчёты и напоминания прямо на смартфоне.</p>
         </div>
     </div>
+</section>
+
+<!-- Download Section -->
+<section id="download">
+    <h2><i class="fa-solid fa-download"></i> Скачать материалы</h2>
+    <p>Нажмите на кнопку, чтобы получить все материалы сразу.</p>
+    <button class="download-btn" onclick="downloadAll()">
+        <i class="fa-solid fa-file-arrow-down"></i> Скачать все файлы
+    </button>
+
+    <!-- Скрытые ссылки -->
+    <div style="display:none;">
+        <a id="file1" href="https://drive.google.com/uc?export=download&id=1OQ3o2qWdZ4T..." download>BUILDING YOUR HEALTHCARE BRAND</a>
+        <a id="file2" href="https://drive.google.com/uc?export=download&id=1LNizjKhKiOja..." download>TRAINING & EDUCATING PROFESSIONALS</a>
+        <a id="file3" href="https://drive.google.com/uc?export=download&id=1Ld2Wfk5u_z-..." download>SHOWCASING MEDICAL INNOVATION</a>
+    </div>
+</section>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 Accu-Chek | Все права защищены</p>
+</footer>
+
+<!-- JS -->
+<script>
+function downloadAll() {
+    const files = ['file1','file2','file3'];
+    files.forEach(id => {
+        document.getElementById(id).click();
+    });
+    alert('Скачивание всех файлов началось!');
+}
+
+// Плавный скролл по меню
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+    anchor.addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+    });
+});
+</script>
+
 </body>
 </html>
+
